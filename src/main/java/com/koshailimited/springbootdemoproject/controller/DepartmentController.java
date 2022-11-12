@@ -5,6 +5,7 @@ import com.koshailimited.springbootdemoproject.service.DepartmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -13,7 +14,7 @@ public class DepartmentController {
     @Autowired
     private DepartmentService departmentService;
     @PostMapping("/departments")
-    public Department saveDepartment(@RequestBody Department department){
+    public Department saveDepartment(@Valid @RequestBody Department department){
 
          departmentService.saveDepartment(department);
          return department;
