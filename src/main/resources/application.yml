@@ -3,7 +3,7 @@ server:
 
 spring:
     profiles:
-      active: prod
+      active: qa
 
 ---
 
@@ -22,6 +22,11 @@ spring:
 welcome:
     message: Welcome to Spring Boot from qa database
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 ---
 
 

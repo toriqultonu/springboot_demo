@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.koshailimited</groupId>
 	<artifactId>springboot-demo-project</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<name>springboot-demo-project</name>
 	<description>springboot-demo-project</description>
 	<properties>
@@ -60,6 +60,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 	</dependencies>
 
