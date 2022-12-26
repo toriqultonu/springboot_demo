@@ -18,8 +18,8 @@ public class MyServer {
             System.out.println("Client connected");
 
             DataInputStream dis = new DataInputStream(s.getInputStream());
-
-            System.out.println(dis.r);
+            String msg = dis.readUTF();
+            System.out.println("Msg from client: "+msg);
         }
         catch (IOException e) {
             System.out.println(e);

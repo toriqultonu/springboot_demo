@@ -13,7 +13,7 @@ public class MyClient {
 
             System.out.println("Client is ready");
             DataOutputStream dout = new DataOutputStream(s.getOutputStream());
-            dout.writeBytes("hello server");
+            dout.writeChars("hello server");
             dout.flush();
             s.close();
         }
